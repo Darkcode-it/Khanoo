@@ -1,0 +1,180 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.AllDiv {
+    margin: 50px auto;
+    width: 90%;
+    max-width: 1000px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0def7;
+    border-radius: 10px;
+    border: 1px solid #e1e1e1;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    height: auto;
+    margin-right: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #100a55;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #7065f0;
+}
+
+.subtitle {
+    font-weight: 400;
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    color: #6c727f;
+    transition: color 0.3s ease;
+}
+
+.subtitle:hover {
+    color: #100a55;
+}
+
+.signup-form {
+    width: 90%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #7065f0;
+    outline: none;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+.submit-btn {
+    width: 90%;
+    padding: 10px;
+    background-color: #7065f0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #100a55;
+}
+
+.img3 {
+    max-width: 45%;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    backdrop-filter: blur(200px);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.img3:hover {
+    transform: scale(1.05);
+}
+
+/* انیمیشن‌ها */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 2;
+        transform: translateX(0);
+    }
+}
+
+/* رسپانسیو برای موبایل */
+@media (max-width: 768px) {
+    .AllDiv {
+        flex-direction: column; /* تغییر جهت به عمودی در موبایل */
+        align-items: center;
+        text-align: center;
+    }
+
+    .text {
+        width: 100%; /* عرض کامل در موبایل */
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .signup-form {
+        width: 100%; /* عرض کامل در موبایل */
+    }
+
+    .form-group {
+        width: 100%; /* عرض کامل در موبایل */
+    }
+
+    .submit-btn {
+        width: 100%; /* عرض کامل در موبایل */
+    }
+
+    .img3 {
+        display: none; /* مخفی کردن عکس در موبایل */
+    }
+}

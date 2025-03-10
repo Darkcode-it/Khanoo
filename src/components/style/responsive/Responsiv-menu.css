@@ -1,0 +1,92 @@
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        /*border: 9px solid red;*/
+        box-sizing: border-box; /* جلوگیری از افزایش عرض به دلیل border */
+    }
+
+    .iconmenu {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 0;
+        cursor: pointer;
+    }
+    .menu-item{
+        display: none;
+    }
+    #logo{
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    a {
+        display: block; /* مخفی کردن لینک‌ها در حالت موبایل */
+    }
+
+    .btns {
+        display: none; /* مخفی کردن دکمه‌ها در حالت موبایل */
+    }
+
+    #header-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #header-container h1 {
+        font-size: 40px;
+        width: 100%;
+        line-height: 50px;
+        font-weight: 350;
+        text-align: center;
+        padding: 0;
+        margin: 20px 0; /* اضافه کردن margin برای فاصله بهتر */
+    }
+
+    #header-container #header-p {
+        font-size: 20px;
+        width: 100%;
+        line-height: 30px;
+        font-weight: 350;
+        text-align: center;
+        padding: 0;
+        margin: 20px 0; /* اضافه کردن margin برای فاصله بهتر */
+    }
+
+    #header-container #numbers-con-desk {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        gap: 100px; /* فاصله بین آیتم‌ها */
+    }
+
+    #header-container .numbers-con-mob {
+        display: flex;
+        justify-content: center;
+        gap: 10px; /* فاصله بین آیتم‌ها */
+    }
+
+    #rent-list {
+        margin: 48px 0 0;
+        min-width: 40%;
+        display: flex;
+        border-radius: 20px;
+        justify-content: center;
+        flex-wrap: wrap; /* برای نمایش بهتر در صفحه‌های کوچک */
+    }
+
+    #rent-list p {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0; /* اضافه کردن margin برای فاصله بهتر */
+    }}

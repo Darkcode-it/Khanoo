@@ -1,0 +1,314 @@
+* {
+     /*background-color: #f011;*/
+    /*  border-width: 1px;*/
+}
+
+
+body {
+    border: 30px solid rgb(251, 251, 251);
+    background-color: #f7f7fd;
+    border-radius: 50px;
+
+}
+
+
+#logo{
+    margin-right: 20px;
+}
+.iconmenu {
+    display: none;
+}
+li {
+    list-style-type: none;
+    color: #000929;
+}
+.menu {
+
+    border-radius: 8px;
+    box-shadow: 2px 2px 20px #e0e0e0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #D3D5DA;
+}
+/* استایل‌های منوی Sticky */
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 99; /* منو بالاتر از سایر عناصر قرار می‌گیرد */
+    background-color: #fff; /* پس‌زمینه سفید برای منو */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* سایه برای جداسازی منو از محتوا */
+}
+.menu-item {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-item > li {
+    font-size: 20px;
+}
+
+.btns {
+
+    display: flex;
+    gap: 40px;
+}
+.responsive {
+    display: none;
+}
+.ham {
+    width: 100px;
+    display: none;
+}
+.btn1:hover {
+    cursor: pointer;
+    box-shadow: 1px 1px 2px #4a338d;
+}
+.btn1b:hover {
+    cursor: pointer;
+   color: white;
+}
+.btn1 {
+    width: 80px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid #E0DEF7;
+    background-color: white;
+}
+.btn1b {
+
+    width: 80px;
+    height: 40px;
+    padding: 2px;
+    margin-left: 40px;
+    border-radius: 8px;
+    background-color: #7065F0;
+    border-style: none;
+}
+#header-container {
+    background-image:
+            url("../../../public/img/map2.jpg");
+   backdrop-filter: blur(200px);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    background-color: #f7f7fd;
+}
+#header-container h1 {
+
+    font-size: 64px;
+    width: 544px;
+    padding-right: 90px;
+}
+#header-container #header-p {
+    padding-right: 90px;
+    font-weight: 400;
+    font-size: 20px;
+    width: 380px;
+    margin-top: 32px;
+}
+#header-container .numbers-con {
+    display: flex;
+    gap: 80px;
+    padding: 20px 160px;
+}
+#header-container .numbers-con img {
+    display: inline;
+}
+#header-container .numbers-con p:first-of-type {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: auto;
+    font-size: 32px;
+    color: #7065f0;
+}
+#header-container .numbers-con p:nth-of-type(2) {
+    color: #6c727f;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+.numbers-con-mob {
+    display: none;
+}
+.img-num-container {
+    display: flex;
+    gap: 24px;
+
+}
+#rent-list {
+    margin-right: 90px;
+    display: flex;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 25%;
+    background-color: white;
+
+}
+#rent-list p {
+    padding: 10px 30px;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0def7;
+}
+#rent-list p:first-of-type {
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #7065f0;
+    border-bottom: 3px solid #7065f0;
+}
+
+#rent-list {
+    margin-right: 90px;
+    display: flex;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 25%;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* سایه اولیه */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* انیمیشن برای سایه و transform */
+}
+
+#rent-list p {
+    padding: 10px 30px;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer;
+    border-bottom: 1px solid #e0def7;
+    transition: color 0.3s ease, transform 0.3s ease; /* انیمیشن برای رنگ و transform */
+}
+
+#rent-list p:first-of-type {
+    padding: 10px 32px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #7065f0;
+    border-bottom: 3px solid #7065f0;
+}
+
+#rent-list p:hover {
+    color: #7065f0; /* تغییر رنگ متن هنگام هاور */
+    transform: translateY(-3px); /* حرکت به بالا هنگام هاور */
+}
+
+#rent-list:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* سایه بیشتر هنگام هاور */
+    transform: translateY(-2px); /* حرکت به بالا هنگام هاور */
+}
+
+
+/*+++++++++++++++++++++++++++++=*/
+
+
+
+
+/* استایل‌های گزینه‌های منو */
+.menu-item > li > a {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.menu-item > li:hover > a {
+    color: #7065F0;
+    transform: scale(1.05); /* بزرگ‌تر شدن متن هنگام هاور */
+}
+
+
+/* استایل‌های زیرمنو */
+.sub-menu {
+    position: absolute;
+    background-color: #fff;
+    border: 0.5px solid #ddd;
+    border-radius: 5px;
+    padding: 5px;
+    list-style-type: none;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: max-content;
+    opacity: 0;
+    transform: translateY(100px);
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    z-index: 99;
+}
+
+.menu-item > li:hover .sub-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.sub-menu li {
+    padding: 2px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 4px;
+}
+
+.sub-menu li:hover {
+    font-size: 30px;
+    color: #7065f0;
+    border-bottom: 1px;
+    transform: translateX(3px); /* حرکت افقی گزینه‌ها هنگام هاور */
+}
+
+/* استایل‌های منو اصلی */
+.menu-item {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+}
+
+.menu-item > li {
+    position: relative;
+}
+
+.menu {
+    position: relative;
+    overflow: visible;
+}
+/* استایل آیکون فلش */
+.icon-arrow {
+    margin-right: 5px; /* فاصله آیکون از متن */
+    transition: transform 0.3s ease-in-out; /* انیمیشن چرخش */
+}
+
+/* چرخش آیکون هنگام هاور */
+.menu-item > li:hover .icon-arrow {
+    transform: rotate(180deg); /* چرخش 180 درجه */
+}
+
+
+
+#logo {
+    background: linear-gradient(90deg, #7065F0, #feb47b, #ff6f61, #7065F0, #ff7e5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: gradientText 5s linear infinite;
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 5% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

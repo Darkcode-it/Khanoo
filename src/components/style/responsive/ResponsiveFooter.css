@@ -1,0 +1,43 @@
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+    #logoEnd {
+        border-radius: 10px;
+        width: 100px; /* تنظیم عرض لوگو */
+        height: auto; /* ارتفاع خودکار */
+        margin: 20px;
+        box-sizing: border-box;
+    }
+
+    .allDivFooter {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #f8f9fa; /* رنگ پس‌زمینه */
+        border-radius: 10px; /* گردی گوشه‌ها */
+    }
+
+    .endicon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 600px; /* حداکثر عرض */
+        margin-bottom: 40px;
+        padding: 0 20px; /* فاصله از لبه‌ها */
+        box-sizing: border-box;
+    }
+
+    .endicon a {
+        color: #7065F0; /* رنگ آیکون‌ها */
+        font-size: 1.5rem; /* اندازه آیکون‌ها */
+        transition: color 0.3s ease; /* انیمیشن تغییر رنگ */
+    }
+
+    .endicon a:hover {
+        color: #5a4fcc; /* تغییر رنگ آیکون‌ها هنگام هاور */
+    }
+}
