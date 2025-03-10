@@ -1,0 +1,101 @@
+
+
+
+
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+    .first {
+        margin: 0;
+        margin-top: 100px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .article-s {
+        display: flex;
+        flex-wrap: nowrap; /* جلوگیری از شکسته شدن ردیف */
+        overflow-x: auto; /* فعال کردن اسکرول افقی */
+        gap: 10px; /* فاصله بین آیتم‌ها */
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding-right: 200px;
+        padding-bottom: 10px; /* برای جلوگیری از بریده شدن محتوا */
+    }
+
+    .article {
+        flex: 0 0 auto; /* جلوگیری از تغییر اندازه آیتم‌ها */
+        width: 250px; /* عرض ثابت برای هر مقاله */
+        height: auto;
+        background-color: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 12px; /* اضافه کردن border-radius برای زیبایی */
+    }
+
+    .article:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .img-article {
+        width: 100%;
+        height: auto;
+        border-radius: 12px 12px 0 0;
+        transition: transform 0.3s ease;
+    }
+
+    .article:hover .img-article {
+        transform: scale(1.05);
+    }
+
+    .price {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #100A55;
+        text-align: center;
+    }
+
+    .title-price {
+        font-size: 1.25rem;
+        font-weight: bold;
+        color: #100A55;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .subtitle-price {
+        font-size: 1rem;
+        color: #6C727F;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .Facilities {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 2px;
+        background-color: #f8f9fa;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .Beds {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        font-size: 1rem;
+        color: #6C727F;
+        transition: color 0.3s ease;
+    }
+
+
+    .Beds:hover {
+        color: #100A55;
+        transform: scale(1.1);
+    }
+}

@@ -1,0 +1,89 @@
+.second {
+    width: 90%; /* عرض را به 90% کاهش دهید */
+    max-width: 1200px; /* حداکثر عرض را محدود کنید */
+    height: auto; /* ارتفاع به صورت خودکار تنظیم می‌شود */
+    margin: 50px auto; /* مرکز چین و فاصله از بالا و پایین */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+    background: linear-gradient(135deg, #E0DEF7, #fad0c4, #E0DEF7, #E0DEF7);
+    background-size: 400% 400%;
+    animation: gradientBackground 10s ease infinite;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.second.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.titleSecond {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 56px;
+}
+
+.paragraphSecond {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    opacity: 0.7;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.textSecond {
+    font-size: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 400;
+    line-height: 32px;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+#active {
+    background: linear-gradient(90deg, #7065F0, #feb47b, #ff6f61, #7065F0, #ff7e5f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 500% auto;
+    animation: gradientText 5s linear infinite;
+}
+
+.img-user {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+@keyframes gradientText {
+    0% {
+        background-position: 5% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 10% 50%;
+    }
+}
+
+@keyframes gradientBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

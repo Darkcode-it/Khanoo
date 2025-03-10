@@ -1,0 +1,113 @@
+.first {
+    flex-wrap: wrap;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.article-s {
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.article {
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    width: 20%;
+    height: auto;
+    /* padding: 5px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.price {
+    font-size: 100%;
+    color: #7065f0;
+    font-weight: 700;
+}
+
+.img-article {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+.icon-plice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.title-price {
+    color: #7065f0;
+    font-weight: 750;
+    margin-left: 20px;
+    width: 40%;
+    height: auto;
+    font-size: 100%;
+}
+
+.subtitle-price {
+    padding-top: 10px;
+    color: darkgray;
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+
+.Facilities {
+    border-top: 1px solid #adadad;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   padding-left: 3px;
+    padding-right: 3px;
+}
+
+.Beds {
+    color: darkgray;
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+}
+.img-article {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.article {
+    position: relative;
+    overflow: hidden;
+}
+
+.article::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background-color: rgba(7, 7, 7, 0.5);*/
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.article:hover .img-article {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(4, 5, 5, 0.9);
+    filter: brightness(0.7);
+}
+
+.article:hover::after {
+    opacity: 1;
+}
+
+

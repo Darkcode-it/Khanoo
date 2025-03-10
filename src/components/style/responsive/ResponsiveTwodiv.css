@@ -1,0 +1,41 @@
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+    .second {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .titleSecond {
+        font-size: clamp(2rem, 5vw, 2.5rem); /* استفاده از clamp برای اندازه‌های واکنش‌گرا */
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        color: #100A55;
+        font-weight: bold;
+    }
+
+    .paragraphSecond {
+        font-size: clamp(1.3rem, 3vw, 1.25rem); /* استفاده از clamp برای اندازه‌های واکنش‌گرا */
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        color: #6C727F;
+        line-height: 1.6;
+    }
+
+    .textSecond {
+        font-size: clamp(1.3rem, 3vw, 1.25rem); /* استفاده از clamp برای اندازه‌های واکنش‌گرا */
+        line-height: 1.6;
+        font-weight: bold;
+        width: 100%;
+        height: auto;
+        color: #100A55;
+        margin-bottom: 20px;
+    }
+    #active{font-size: 20px}
+}

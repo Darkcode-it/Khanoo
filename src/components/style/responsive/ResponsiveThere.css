@@ -1,0 +1,101 @@
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+    .third-wrapper {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+
+    .third {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    .titleSearch {
+        font-size: clamp(1.5rem, 4vw, 2rem); /* استفاده از clamp برای اندازه‌های واکنش‌گرا */
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        color: #9EA3AE;
+        font-weight: bold;
+    }
+
+    .textSearch {
+        font-size: clamp(1rem, 3vw, 1.25rem); /* استفاده از clamp برای اندازه‌های واکنش‌گرا */
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        color: #E0DEF7;
+        line-height: 1.6;
+    }
+
+    .paragraph {
+        font-size: clamp(1rem, 3vw, 1.25rem); /* استفاده از clamp برای اندازه‌های واکنش‌گرا */
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        color: #E0DEF7;
+        line-height: 1.6;
+    }
+
+    .SearchVsButton {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        border-radius: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px; /* فاصله بین آیتم‌ها */
+    }
+
+    .input1 {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 1rem;
+        box-sizing: border-box;
+    }
+
+    .btn2 {
+        margin: 5px;
+        background-color: #7065F0;
+        color: white;
+        width: 100px;
+        height: auto;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn2:hover {
+        background-color: #5a4fcc; /* تغییر رنگ دکمه هنگام هاور */
+    }
+
+    .paragraph2 {
+        font-size: clamp(1rem, 3vw, 1.25rem); /* استفاده از clamp برای اندازه‌های واکنش‌گرا */
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        color: #E0DEF7;
+        line-height: 1.6;
+    }
+    #btncalculate{
+        margin: 0;
+        width: 25%;
+        height: 70%;
+        font-size: 16px;
+    }
+}

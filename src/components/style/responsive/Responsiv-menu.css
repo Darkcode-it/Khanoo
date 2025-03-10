@@ -1,0 +1,126 @@
+
+@media screen and (max-width: 1000px) and (min-width: 300px) {
+    body {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .iconmenu {
+        display: block;
+        position: absolute;
+        left: 20px;
+        top: 0;
+        cursor: pointer;
+    }
+
+    .menu-item {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        align-items: center;
+        transition: all 1s ease;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+
+    .menu-item.open {
+        display: flex;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    #logo {
+        width: 100%;
+        height: auto;
+        font-size: 30px;
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    a {
+        display: block;
+    }
+
+    .btns {
+        display: none;
+    }
+
+    #header-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header-container h1 {
+        font-size: 40px;
+        width: 100%;
+        line-height: 50px;
+        font-weight: 350;
+        text-align: center;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    #header-container #header-p {
+        font-size: 20px;
+        width: 100%;
+        line-height: 30px;
+        font-weight: 350;
+        text-align: center;
+        padding: 0;
+        margin: 20px 0;
+    }
+
+    #header-container #numbers-con-desk {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        gap: 100px;
+    }
+
+    #header-container .numbers-con-mob {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    #rent-list {
+        margin: 48px 0 0;
+        min-width: 40%;
+        display: flex;
+        border-radius: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #rent-list p {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    @keyframes slideDown {
+        0% {
+            top: -100%;
+            left: 0;
+        }
+        100% {
+            top: 60px;
+            left: 0;
+        }
+    }
+
+    .menu-item.open {
+        text-align: center;
+        animation: slideDown 1s ease forwards; /* انیمیشن دو ثانیه‌ای */
+    }
+}
