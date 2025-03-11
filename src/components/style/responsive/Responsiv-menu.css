@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 1000px) and (min-width: 300px) {
     body {
         width: 100%;
@@ -25,23 +24,22 @@
         background-color: #fff;
         flex-direction: column;
         align-items: center;
-        transition: all 1s ease;
         opacity: 0;
-        transform: translateY(-100%);
+        visibility: hidden;
+        transition: opacity 1s ease, visibility 1s ease;
     }
 
     .menu-item.open {
         display: flex;
         opacity: 1;
-        transform: translateY(0);
+        visibility: visible;
+        animation: slideDown 1s ease forwards;
     }
 
     #logo {
         width: 100%;
-        height: auto;
         font-size: 30px;
-        margin: 0;
-        margin-right: 10px;
+        margin: 0 10px 0 0;
     }
 
     a {
@@ -60,31 +58,31 @@
         align-items: center;
     }
 
-    #header-container h1 {
-        font-size: 40px;
+    #header-container h1,
+    #header-container #header-p {
         width: 100%;
-        line-height: 50px;
-        font-weight: 350;
         text-align: center;
         padding: 0;
         margin: 20px 0;
+    }
+
+    #header-container h1 {
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 350;
     }
 
     #header-container #header-p {
         font-size: 20px;
-        width: 100%;
         line-height: 30px;
         font-weight: 350;
-        text-align: center;
-        padding: 0;
-        margin: 20px 0;
     }
 
     #header-container #numbers-con-desk {
         display: flex;
-        padding: 0;
         justify-content: center;
         gap: 100px;
+        padding: 0;
     }
 
     #header-container .numbers-con-mob {
@@ -111,16 +109,9 @@
     @keyframes slideDown {
         0% {
             top: -100%;
-            left: 0;
         }
         100% {
             top: 60px;
-            left: 0;
         }
-    }
-
-    .menu-item.open {
-        text-align: center;
-        animation: slideDown 1s ease forwards; /* انیمیشن دو ثانیه‌ای */
     }
 }
