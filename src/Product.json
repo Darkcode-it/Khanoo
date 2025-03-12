@@ -1,0 +1,18 @@
+{
+  "images": [
+    "./img/h1.png",
+    "./img/h2.png",
+
+    "./img/h4.svg",
+    "./img/h6.svg"
+  ],
+  "price": "100 میلیون تومان",
+  "address": "تهران، خیابان ولیعصر",
+  "type": "فروش",
+  "details": {
+    "area": "120 متر مربع",
+    "rooms": 3,
+    "bathrooms": 2,
+    "toilets": 2
+  }
+}

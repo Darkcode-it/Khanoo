@@ -41,7 +41,7 @@ import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Login from "./components/Login.jsx";
 import Signup from "./components/Signup.jsx";
-import ItemMenu from "./components/ItemMenu.jsx";
+import Product from "./components/Product.jsx";
 
 function App() {
     return (
@@ -56,7 +56,7 @@ function App() {
                 <Footer/>
                 <Login/>
                 <Signup />
-               <ItemMenu/>
+                <Product/>
                 <Routes>
                 <Route path="/Login" element={<Login />} />
                        

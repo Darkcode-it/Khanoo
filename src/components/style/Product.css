@@ -1,0 +1,125 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+}
+
+.product-container {
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 500px; /* حداقل ارتفاع صفحه */
+    background-color: #f5f5f5;
+
+
+}
+
+.image-container {
+    align-items: center;
+    position: relative;
+    width: 100%; /* عرض تصویر */
+    height: auto; /* ارتفاع تصویر */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: contain; /* تصویر به طور کامل نمایش داده شود */
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-container svg {
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem; /* اندازه نسبی */
+    cursor: pointer;
+}
+
+.image-container svg:first-child {
+    left: 10px;
+
+}
+
+.image-container svg:last-child {
+
+    right: 10px;
+}
+
+.details {
+    margin: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* عرض توضیحات */
+}
+
+.details p {
+    margin-bottom: 10px;
+}
+
+.details ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details li {
+    margin-bottom: 10px;
+}
+
+.details svg {
+    margin-left: 10px;
+}
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    overflow-y: auto; /* اسکرول عمودی */
+    height: 100vh; /* ارتفاع تمام صفحه */
+}
+
+.product-container {
+    margin-bottom: 20px; /* فاصله بین کامپوننت‌ها */
+}
+/* حالت رسپانسیو */
+@media (max-width: 768px) { /* تبلت */
+    .image-container {
+        width: 90%;
+        height: 250px;
+    }
+    .details {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) { /* موبایل */
+    .image-container {
+        width: 100%;
+        height: 200px;
+
+    }
+    .details {
+        width: 100%;
+        height: auto;
+       padding: 0;
+    }
+    .image-container svg {
+        border-radius: 10px;
+        font-size: 1.2rem; /* اندازه کوچک‌تر برای موبایل */
+    }
+    #iconProduct{
+        width: 20px;
+    }
+
+}
