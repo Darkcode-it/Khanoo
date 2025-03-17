@@ -56,7 +56,7 @@ function App() {
                 <Footer/>
                 <Login/>
                 <Signup />
-                <Product/>
+                {/*<Product/>*/}
                 <Routes>
                 <Route path="/Login" element={<Login />} />
                        

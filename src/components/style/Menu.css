@@ -89,12 +89,12 @@ color: #000929;
 }
 #header-container {
     background-image:
-            url("../../../public/img/map.svg");
+            url("../../../public/img/map3.jpg");
    backdrop-filter: blur(200px);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
-    /*background-size: cover;*/
+    background-size: cover;
     width: 100%;
     height: auto;
     background-color: #f7f7fd;
