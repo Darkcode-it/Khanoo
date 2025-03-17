@@ -1,31 +1,3 @@
-// import './App.css'
-// import Menu from "./components/Menu.jsx";
-// import "./components/style/responsive/Responsive.css"
-// import Onediv from "./components/Onediv.jsx";
-// import Articles from "./components/Articles.jsx";
-// import Twodiv from "./components/Twodiv.jsx";
-// import There from "./components/There.jsx";
-// import Footer from "./components/Footer.jsx";
-// import Header from "./components/Header.jsx";
-// import Login from "./components/Login.jsx";
-// function App() {
-//
-//
-//   return (
-//    <div dir='rtl'>
-// <Menu/>
-//        <Header/>
-//        <Onediv/>
-//         <Articles/>
-//        <Twodiv/>
-//        <There/>
-//        <Footer/>
-//        <Login/>
-//        </div>
-//   )
-// }
-//
-// export default App
 
 
 import React from "react";
@@ -54,9 +26,9 @@ function App() {
                 <Twodiv/>
                 <There/>
                 <Footer/>
-                <Login/>
+                {/* <Login/>
                 <Signup />
-                {/*<Product/>*/}
+                <Product/> */}
                 <Routes>
                 <Route path="/Login" element={<Login />} />
                        
